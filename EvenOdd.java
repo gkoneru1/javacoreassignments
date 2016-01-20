@@ -11,7 +11,7 @@ public class EvenOdd {
 			int a = s.nextInt();
 			evenOdd(a);
 	}
-   public static void evenOdd(int a){
+   public static boolean evenOdd(int a){
 	   boolean flag = true;
 	   if(a%2==0){
 		   System.out.println(flag);
@@ -19,5 +19,6 @@ public class EvenOdd {
 		   flag=false;
 		   System.out.println(flag);
 	   }
+	   return flag;
    }
 }
