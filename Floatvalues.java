@@ -14,10 +14,11 @@ public class Floatvalues {
 		float b = s1.nextFloat();
 		add(a,b);
 	}
-   public static void add(float a, float b){
+   public static float add(float a, float b){
 	   float result= a+b;
 	   a=result;
 	   System.out.println("The value of the first variable a is:"+" "+a);
-	   
+	   return a;
    }
+   
 }
