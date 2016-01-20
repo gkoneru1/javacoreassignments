@@ -11,9 +11,10 @@ public class Square {
 		int a = s.nextInt();
 		square(a);
 	}
-   public static void square(int b){
+   public static int square(int b){
 	   int result = (int) Math.pow(b, 2);
 	   System.out.println("The square root of "+ b +"is:"+" "+result);
+	   return result;
    }
 }
 
