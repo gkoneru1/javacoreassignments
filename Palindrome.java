@@ -8,6 +8,12 @@ public class Palindrome {
 		Scanner s= new Scanner(System.in);
 		System.out.println("Enter the number:");
 		int n=s.nextInt();
+		palindrome(n);
+		
+	}
+	
+	public static int palindrome(int n){
+	
 		int original=n;
 		int reverse=0;
 		
@@ -18,12 +24,13 @@ public class Palindrome {
 		}
 		if(original==reverse){
 			System.out.println("Its a palindrome");
+			return original;
 		}
 		else{
 			System.out.println("Its not a palindrome");
+			return 0;
 		}
-
+	
 	}
-
 }
 
